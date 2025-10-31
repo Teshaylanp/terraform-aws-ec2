@@ -5,7 +5,7 @@ from datetime import datetime
 REGION = "af-south-1"
 INSTANCE_ID = "i-086c0ceb86255211b"
 
-ssm = boto3.client("ssm", region_name=REGION)
+ssm = boto3.client("ssm", region_name="eu-west-1")
 
 
 def send_cmd(cmds):
