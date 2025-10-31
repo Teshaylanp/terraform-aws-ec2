@@ -27,7 +27,7 @@ resource "aws_iam_role_policy" "secret_manager_policy" {
         Action = [
           "secretsmanager:GetSecretValue"
         ],
-        Resource = aws_secretsmanager_secret.database_credentials.arn
+        Resource = aws_secretsmanager_secret.database_credentials_postgres_final.arn
       }
     ]
   })
